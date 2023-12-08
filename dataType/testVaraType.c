@@ -5,7 +5,7 @@
 /*sizeof计算字节的大小*/
 int main()
 {
-#if 0  
+#if 0 
     long bigValue = 0;
     int len = sizeof(bigValue);
     printf("len: %d, bigValue =%ld\n", len , bigValue);
@@ -154,17 +154,17 @@ short smallValue = 1;
 len = sizeof(smallValue);
 printf("len: %d, smallValue = %d\n", len , smallValue);
 #endif
-#if 1
+#if 0
 char sex = -1;
 int len = sizeof(sex);
 printf("len: %d, sex = %c , sex = %d\n ", len , sex, sex );
 #endif
-
+#if 0
 char default_value = 137;
 len = sizeof(default_value);
 printf("len: %d, default_value = %c , default_value = %d\n ", len , default_value, default_value );
-
-#if 1
+#endif
+#if 0
 unsigned char m_value = -1;
 len = sizeof (m_value);
 printf ("len: %d, sex = %c sex = %d\n", len, m_value, m_value);
