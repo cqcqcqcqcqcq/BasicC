@@ -13,7 +13,7 @@ enum STATUS_CODE
 
 /*宏定义*/
 /*代码规范： 宏必须全部大写*/
-#define COUNT_NUM   100
+#define COUNT_NUM   5
 #define REANGE_NUM  200
 
 
@@ -25,21 +25,22 @@ int main()
 
 #if 0
   /*判断语句*/
-  int bugdet = 5000;
-
+  int budget = 5000;
+  int minbudget = 4000;
+  int maxbudget = 6000;
   int applephone = 8999;
   int mi14Pro = 4399;
   int hauweip60 = 6000;
 
-  if (bugdet > applephone)
+  if (budget > applephone)
   {
     printf("get a applephone!\n");
   }
-  else if (bugdet > mi14Pr)
+  else if (budget > mi14Pro)
   {
-    printf("get a mi14Pr!\n");
+    printf("get a mi14Pro!\n");
   }
-  else if (bugdet > hauweip60)
+  else if (budget > hauweip60)
   {
     printf("get a hauweip60!\n");
   }
@@ -57,8 +58,9 @@ int main()
 
 #endif
 #if 0
- int bugdet = 5000;
-
+   int budget = 5000;
+  int minbudget = 5500;
+  int maxbudget = 8000;
   int applephone = 8999;
   int mi14Pro = 4399;
   int hauweip60 = 6000;
@@ -73,15 +75,15 @@ int main()
     printf("I am sad , no phone\n");
   }
 
-
+    /*0 && 1 = 0*/
     /*&&: 两边都是1 （成立）*/
-  if ((minbudget < budget) && (bugdet < maxbudget))
+  if ((minbudget < budget) && (budget < maxbudget))
   {
     printf ("success get a computer\n ");
   }
    else
    {
-    printf ("success get a computer\n ");
+    printf ("error get a computer\n ");
    }
 
 #endif
@@ -120,7 +122,7 @@ int main()
 
 #endif
 
-#if 0
+#if 1
 srand(time(NULL));
 /*请你写一个一百以内的数 [1 - 100]*/
 
@@ -129,19 +131,21 @@ srand(time(NULL));
 
 /*代码规范：循环不允许使用i */
 /*代码规范： 不允许使用魔鬼数字*/
-int randomNum = 0;
-for (size_t idx = 0; idx < COUNT_NUM; idx++)
+int  randomNum = 0;
+for (int idx = 0; idx < COUNT_NUM; idx++)
 {
     randomNum = rand()% REANGE_NUM + 1;
     printf("randomNum:%d\n", randomNum);
 }
 
+#endif
+#if 0
+srand(time(NULL));
 
-
-int randomNum rand() % 100 + 1;
+int randomNum = rand() % 100 + 1;
 printf("randomNum:%d\n", randomNum);
 
-int randomNum rand() % 100 + 1;
+randomNum =  rand() % 100 + 1;
 printf("randomNum:%d\n", randomNum);
 
 
@@ -149,7 +153,7 @@ printf("randomNum:%d\n", randomNum);
 
 #endif
 
-#if 1
+#if 0
 /*编码规范： 变量尽量使用驼峰式命名*/
    int circletimes = COUNT_NUM >> 1; 
    int randomNum = 0;
