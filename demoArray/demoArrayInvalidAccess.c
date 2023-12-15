@@ -16,7 +16,7 @@ printf("array[15]: %d\n", array[15]);
 
 #endif
 
-#if 0
+#if 1
 /* 静态数组：优势和劣势*/
 int desk[BUFFER_SIZE] = { 0 };
 

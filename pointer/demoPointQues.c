@@ -8,7 +8,7 @@ int main()
 
     /*Q1：字符串常量*/
     /*1，打印字符串的每一个字符*/
-    /*蛙泳： 使用for循环的方式*/
+    /*while： 使用for循环的方式*/
 #if 0
     int len = strlen(ptr);
     printf("len:%d\n", len);
